@@ -64,22 +64,22 @@ const int camPin = 12; //digital io, labeled SpnEn on CNC V3 shield, used to tri
 int menuNumber = 0;
 int optionNumber = 0;
 
-long timelapseFrames = 5;
+long timelapseFrames = 145;
 long framecount;
 
 int cursPos = 0; //indexes position of cursor in cursor function
 bool cursMode = 0; // 0 = movement mode, 1 = modify mode. Pressing the '4' button toggles between modes.
 
-long interval_m = 1; 
-long interval_s = 10;
+long interval_m = 0; 
+long interval_s = 12;
 
 
 
 
 long camPosition = 0;
 long posCounter = 0;
-long keyPositionIn = 356;
-long keyPositionOut = 810;
+long keyPositionIn = 200;
+long keyPositionOut = 2075;
 
 unsigned long currentMillis;
 unsigned long prevMillis;
